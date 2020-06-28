@@ -1,14 +1,49 @@
-import React from "react"
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+// Theme
+import { lightTheme } from '../components/themes';
 
-const NotFoundPage = () => (
+// Components
+import { Layout, Display } from '../components';
+import SEO from '../components/seo';
+
+// Images
+import logoImg from '../images/logo.svg';
+
+const StyledNotFoundPage = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin: 0 0 2rem;
+  }
+
+  p {
+    margin: 0 0 2rem;
+  }
+`;
+
+StyledNotFoundPage.defaultProps = {
+  theme: lightTheme,
+};
+
+const NotFoundPage = ({ siteTitle }) => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <StyledNotFoundPage>
+      <h1>
+        <Link to="/">
+          <img width="180" src={logoImg} alt={siteTitle} />
+        </Link>
+      </h1>
+      <Display as="p">Sorry, that page doesn’t seem to exist.</Display>
+    </StyledNotFoundPage>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
