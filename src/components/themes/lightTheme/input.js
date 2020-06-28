@@ -8,5 +8,6 @@ export const input = {
   outlineColor: colorsTheme.primary,
   placeholderColor: colorsTheme.grayLight,
   height: '40px',
+  backgroundColor: colorsTheme.primaryLight,
 };
 

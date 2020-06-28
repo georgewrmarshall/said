@@ -13,6 +13,7 @@ import {
   Video,
   Display,
   Headline,
+  Body,
 } from '../components';
 import SEO from '../components/seo';
 
@@ -38,6 +39,8 @@ const StyledIndexPage = styled.div`
 
     input {
       min-width: 0;
+      max-width: 100%;
+      width: 330px;
     }
 
     p {
@@ -105,7 +108,7 @@ const IndexPage = ({ siteTitle }) => (
             <Input placeholder="email" type="email" />
             <Button type="submit">submit</Button>
           </form>
-          <Headline as="p">
+          <Body as="p">
             <a href="mailto:hello@saidstudio.co.nz">hello@saidstudio.co.nz</a>
             <br />
             <a
@@ -116,7 +119,7 @@ const IndexPage = ({ siteTitle }) => (
               @_saidstudio
             </a>
             <br /> +64 22 394 6718
-          </Headline>
+          </Body>
         </div>
       </div>
       <div>

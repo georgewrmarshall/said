@@ -10,6 +10,7 @@ export const StyledInput = styled.input`
     padding: 0 1rem;
     outline-color: ${props.theme.input.outlineColor};
     color:  ${props.theme.input.color};
+    background-color: ${props.theme.input.backgroundColor};
 
     &::placeholder {
       color: ${props.theme.input.placeholderColor};

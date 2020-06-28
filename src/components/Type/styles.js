@@ -16,7 +16,7 @@ StyledDisplay.defaultProps = {
 };
 
 export const StyledHeadline = styled.h2`
-  line-height: 1.5;
+  line-height: 1.7;
   font-weight: normal;
 
   ${(props) => css`
@@ -30,7 +30,7 @@ StyledHeadline.defaultProps = {
 };
 
 export const StyledBody = styled.p`
-  line-height: 1.5;
+  line-height: 1.7;
   ${(props) => css`
     font-size: ${props.theme.type.bodySize};
     font-family: ${props.theme.type.fontFamilyBody};
