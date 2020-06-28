@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/said",
   siteMetadata: {
     title: `SAID Studio`,
     description: `Said Studio is an interior design practice based in New Zealand`,
