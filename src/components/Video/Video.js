@@ -9,11 +9,10 @@ import { StyledVideo } from './styles';
 export const Video = () => {
   return (
     <StyledVideo>
-      <video muted autoplay="autoplay" loop>
+      <video muted autoPlay playsInline loop>
         <source src={curtainsVideo} type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
       </video>
     </StyledVideo>
   );
 };
-

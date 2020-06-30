@@ -51,5 +51,5 @@ export const colors = {
   grayLight: '#8A8888',
   blueLightest: '#D9E6F3',
   blueLight: '#B6C8DB',
-  blueDark: '#6885A4'
+  blueDark: '#6885A4',
 };

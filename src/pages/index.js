@@ -8,14 +8,13 @@ import { lightTheme } from '../components/themes';
 // Components
 import {
   Layout,
-  Button,
-  Input,
+  Form,
   Video,
   Display,
   Headline,
   Body,
+  SEO,
 } from '../components';
-import SEO from '../components/seo';
 
 // Images
 import logoImg from '../images/logo.svg';
@@ -28,19 +27,13 @@ const StyledIndexPage = styled.div`
       margin-bottom: 3rem;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       margin: 0 0 3rem;
     }
 
     form {
-      display: flex;
-      margin-bottom: 2rem;
-    }
-
-    input {
-      min-width: 0;
-      max-width: 100%;
-      width: 330px;
+      margin-bottom: 4rem;
     }
 
     p {
@@ -51,6 +44,7 @@ const StyledIndexPage = styled.div`
       display: flex;
       padding: 4rem;
       height: calc(100vh - 8rem);
+      min-height: 600px;
 
       > div {
         flex: 0 0 50%;
@@ -78,14 +72,12 @@ const StyledIndexPage = styled.div`
         padding-right: 5rem;
       }
     }
-
   `}
 `;
 
 StyledIndexPage.defaultProps = {
   theme: lightTheme,
 };
-
 
 const IndexPage = ({ siteTitle }) => (
   <Layout>
@@ -104,10 +96,7 @@ const IndexPage = ({ siteTitle }) => (
             If you would like to stay up to date with developments from Said
             Studio please enter your email below.
           </Headline>
-          <form>
-            <Input placeholder="email" type="email" />
-            <Button type="submit">submit</Button>
-          </form>
+          <Form />
           <Body as="p">
             <a href="mailto:hello@saidstudio.co.nz">hello@saidstudio.co.nz</a>
             <br />

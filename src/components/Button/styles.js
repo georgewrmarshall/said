@@ -17,6 +17,7 @@ export const StyledButtonBase = styled.button`
     letter-spacing: 0.05rem;
     cursor: pointer;
     transition: 0.3s;
+    text-transform: lowercase;
   `}
 `;
 

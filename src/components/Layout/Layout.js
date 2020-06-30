@@ -17,7 +17,7 @@ import { GlobalStyle } from './styles';
 export const Layout = ({ children }) => {
   return (
     <>
-      <GlobalStyle theme={lightTheme} />      
+      <GlobalStyle theme={lightTheme} />
       <main>{children}</main>
     </>
   );

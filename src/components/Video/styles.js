@@ -6,7 +6,7 @@ export const StyledVideo = styled.div`
     position: relative;
     width: 100%;
     overflow: hidden;
-    
+
     @media ${props.theme.maxWidth.lg} {
       padding-top: 100%;
     }
@@ -27,7 +27,6 @@ export const StyledVideo = styled.div`
       &::-webkit-media-controls-start-playback-button {
         display: none;
       }
-
     }
   `}
 `;

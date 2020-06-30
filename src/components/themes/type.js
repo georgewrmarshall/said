@@ -4,5 +4,5 @@ export const type = {
   displaySize: '2.125rem',
   headlineSize: '1.6875rem',
   bodySize: '1.4375rem',
-  infoSize: '1rem', 
+  infoSize: '1rem',
 };

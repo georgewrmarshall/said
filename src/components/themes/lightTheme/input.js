@@ -10,4 +10,3 @@ export const input = {
   height: '40px',
   backgroundColor: colorsTheme.primaryLight,
 };
-

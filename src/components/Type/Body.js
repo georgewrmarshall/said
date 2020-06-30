@@ -1,15 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 // Styles
-import { StyledBody } from "./styles";
+import { StyledBody } from './styles';
 
 export const Body = ({ children, ...props }) => {
-  return (
-    <StyledBody {...props}>
-      {children}
-    </StyledBody>
-  );
+  return <StyledBody {...props}>{children}</StyledBody>;
 };
 
 Body.propTypes = {

@@ -1,9 +1,12 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
-  pathPrefix: "/said",
+  pathPrefix: '/said',
   siteMetadata: {
     title: `SAID Studio`,
     description: `Said Studio is an interior design practice based in New Zealand`,
-    author: `@georgemarshall`,
+    author: `@georgemarshall-`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,6 +42,13 @@ module.exports = {
           `roboto\:400,`, // you can also specify font weights and styles
         ],
         display: 'swap',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: process.env.MAILCHIMP_ENDPOINT, // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },
   ],

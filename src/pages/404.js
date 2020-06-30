@@ -6,8 +6,7 @@ import styled from 'styled-components';
 import { lightTheme } from '../components/themes';
 
 // Components
-import { Layout, Display } from '../components';
-import SEO from '../components/seo';
+import { Layout, Display, SEO } from '../components';
 
 // Images
 import logoImg from '../images/logo.svg';
