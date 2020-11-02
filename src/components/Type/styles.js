@@ -30,8 +30,8 @@ StyledHeadline.defaultProps = {
 };
 
 export const StyledBody = styled.p`
-  line-height: 1.7;
   ${props => css`
+    line-height: 1.7;
     font-size: ${props.theme.type.bodySize};
     font-family: ${props.theme.type.fontFamilyBody};
   `}
