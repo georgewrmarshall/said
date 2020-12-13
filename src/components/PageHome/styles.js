@@ -7,20 +7,19 @@ export const StyledPageHome = styled.div`
     padding: 3rem 1rem;
 
     img {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
-    h1,
-    h2 {
-      margin: 0 0 3rem;
+    h1 {
+      margin: 0 0 2rem;
     }
 
     form {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
 
     p {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
 
     .video-desktop {
@@ -29,9 +28,8 @@ export const StyledPageHome = styled.div`
 
     @media ${props.theme.minWidth.lg} {
       display: flex;
-      padding: 4rem;
-      height: calc(100vh - 8rem);
-      min-height: 600px;
+      padding: 10vw;
+      height: calc(100vh - 20vw);
 
       > div {
         flex: 0 0 50%;
@@ -41,8 +39,9 @@ export const StyledPageHome = styled.div`
       .content {
         display: flex;
         flex-direction: column;
-        padding-right: 4rem;
+        padding-right: 10vw;
         height: 100%;
+        justify-content: space-between;
       }
 
       p {
@@ -57,12 +56,14 @@ export const StyledPageHome = styled.div`
       .video-desktop {
         display: block;
       }
+
+      .footer {
+        margin-top: auto;
+        margin-bottom: 0;
+      }
     }
 
     @media ${props.theme.minWidth.xxl} {
-      padding: 5rem;
-      height: calc(100vh - 10rem);
-
       .content {
         padding-right: 10rem;
       }

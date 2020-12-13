@@ -2,11 +2,16 @@ import styled, { css } from 'styled-components';
 import { lightTheme } from '../themes';
 
 export const StyledDisplay = styled.h1`
-  ${props => css`
+  ${({ theme }) => css`
     font-weight: 400;
-    line-height: 1.3;
-    font-family: ${lightTheme.type.fontFamilyHeader};
-    font-size: ${lightTheme.type.display.sizeXs};
+    line-height: 1.7;
+    font-family: ${theme.type.fontFamilyHeader};
+    font-size: ${theme.type.display.sizeXs};
+    letter-spacing: 0.04em;
+
+    @media ${theme.minWidth.sm} {
+      font-size: ${theme.type.display.sizeBase};
+    }
   `}
 `;
 
@@ -33,6 +38,7 @@ export const StyledBody = styled.p`
     line-height: 1.7;
     font-size: ${props.theme.type.body.sizeXs};
     font-family: ${props.theme.type.fontFamilyBody};
+    letter-spacing: 0.04em;
   `}
 `;
 

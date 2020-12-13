@@ -35,7 +35,7 @@ export const PageHome = ({ siteTitle }) => (
           touch to chat about your next project.
         </Body>
         <Form />
-        <Body as="p">
+        <Body as="p" className="footer">
           <a href="mailto:hello@saidstudio.co.nz">hello@saidstudio.co.nz</a>
           <br />
           <a

@@ -2,8 +2,8 @@ export const type = {
   fontFamilyBody: `'Roboto', sans-serif`,
   fontFamilyHeaders: `'Roboto', sans-serif`,
   display: {
-    sizeXs: '2rem',
-    sizeBase: '2.125rem',
+    sizeXs: '17px',
+    sizeBase: '21px',
     sizeXl: '4rem',
   },
   headline: {
