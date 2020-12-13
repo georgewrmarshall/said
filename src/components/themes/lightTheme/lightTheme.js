@@ -1,7 +1,7 @@
+import { type } from '../type';
+import { screenSize, minWidth, maxWidth } from '../mediaQueries';
 import { buttonBase, buttonPrimary } from './button';
 import { colorsTheme } from './colors';
-import { screenSize, minWidth, maxWidth } from '../mediaQueries';
-import { type } from '../type';
 import { input } from './input';
 
 export const lightTheme = {

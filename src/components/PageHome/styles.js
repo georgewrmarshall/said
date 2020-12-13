@@ -60,11 +60,11 @@ export const StyledPageHome = styled.div`
     }
 
     @media ${props.theme.minWidth.xxl} {
-      padding: 10rem;
-      height: calc(100vh - 20rem);
+      padding: 5rem;
+      height: calc(100vh - 10rem);
 
       .content {
-        padding-right: 5rem;
+        padding-right: 10rem;
       }
     }
   `}

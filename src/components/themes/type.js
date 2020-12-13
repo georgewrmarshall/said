@@ -1,8 +1,24 @@
 export const type = {
   fontFamilyBody: `'Roboto', sans-serif`,
   fontFamilyHeaders: `'Roboto', sans-serif`,
-  displaySize: '2.125rem',
-  headlineSize: '1.6875rem',
-  bodySize: '1.4375rem',
-  infoSize: '1rem',
+  display: {
+    sizeXs: '2rem',
+    sizeBase: '2.125rem',
+    sizeXl: '4rem',
+  },
+  headline: {
+    sizeXs: '1.25rem',
+    sizeBase: '1.6875rem',
+    sizeXl: '3rem',
+  },
+  body: {
+    sizeXs: '1rem',
+    sizeBase: '1.4375rem',
+    sizeXl: '2rem',
+  },
+  info: {
+    sizeXs: '0.85rem',
+    sizeBase: '1rem',
+    sizeXl: '1.25rem',
+  },
 };
