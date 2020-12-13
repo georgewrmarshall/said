@@ -8,6 +8,7 @@ export const StyledPageHome = styled.div`
 
     img {
       margin-bottom: 2rem;
+      width: 107px;
     }
 
     h1 {
@@ -30,6 +31,10 @@ export const StyledPageHome = styled.div`
       display: flex;
       padding: 10vw;
       height: calc(100vh - 20vw);
+
+      img {
+        width: 180px;
+      }
 
       > div {
         flex: 0 0 50%;

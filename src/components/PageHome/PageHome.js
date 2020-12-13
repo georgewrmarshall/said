@@ -19,7 +19,7 @@ export const PageHome = ({ siteTitle }) => (
     <div>
       <div className="content">
         <Link to="/">
-          <img width="180" src={logoImg} alt={siteTitle} />
+          <img src={logoImg} alt={siteTitle} />
         </Link>
         <Display as="h1">
           Hi. We’re Said, a New Zealand based interior design studio.
