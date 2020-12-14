@@ -2,7 +2,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 module.exports = {
-  pathPrefix: '/said',
+  // pathPrefix: '/said',
   siteMetadata: {
     title: `SAID Studio`,
     description: `Said Studio is an interior design practice based in New Zealand`,
